@@ -6,7 +6,7 @@ import { LoginPageComponent } from './login-page/login-page.component';
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { TooltipModule } from 'ngx-bootstrap/tooltip';
 import { ModalModule } from 'ngx-bootstrap/modal';
-
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -17,7 +17,8 @@ import { ModalModule } from 'ngx-bootstrap/modal';
   imports: [
     BrowserModule,
     BrowserModule,
-    BsDropdownModule.forRoot(),
+    FormsModule,
+      BsDropdownModule.forRoot(),
     TooltipModule.forRoot(),
     ModalModule.forRoot()
   ],
