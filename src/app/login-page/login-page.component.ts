@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -15,7 +16,7 @@ export class LoginPageComponent implements OnInit {
 
   };
 
-  constructor() { }
+  constructor(public router: Router) { }
 
   ngOnInit() {
   }
@@ -23,6 +24,7 @@ export class LoginPageComponent implements OnInit {
   onLogin() {
 
     console.log('hello!!', this.user);
+    this.router.navigate(['/dash-adm']);
 
   }
 

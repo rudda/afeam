@@ -7,18 +7,32 @@ import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { TooltipModule } from 'ngx-bootstrap/tooltip';
 import { ModalModule } from 'ngx-bootstrap/modal';
 import { FormsModule } from '@angular/forms';
+import { DashAdminPageComponent } from './dash-admin-page/dash-admin-page.component';
+import {Routes, RouterModule} from '@angular/router';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginPageComponent
+    LoginPageComponent,
+    DashAdminPageComponent
 
   ],
   imports: [
     BrowserModule,
     BrowserModule,
     FormsModule,
-      BsDropdownModule.forRoot(),
+    RouterModule.forRoot([
+
+
+
+        {
+          path: 'dash-adm',
+          component: DashAdminPageComponent
+
+        }
+
+    ]),
+    BsDropdownModule.forRoot(),
     TooltipModule.forRoot(),
     ModalModule.forRoot()
   ],
