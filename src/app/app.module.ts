@@ -23,7 +23,11 @@ import {Routes, RouterModule} from '@angular/router';
     FormsModule,
     RouterModule.forRoot([
 
+      {
+        path: '',
+        component: LoginPageComponent
 
+      },
 
         {
           path: 'dash-adm',
