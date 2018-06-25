@@ -10,13 +10,17 @@ import { FormsModule } from '@angular/forms';
 import { DashAdminPageComponent } from './dash-admin-page/dash-admin-page.component';
 import {Routes, RouterModule} from '@angular/router';
 import { RelatoriosPageComponent } from './relatorios-page/relatorios-page.component';
+import { AddAtendentePageComponent } from './add-atendente-page/add-atendente-page.component';
+import { AtendentePageComponent } from './atendente-page/atendente-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginPageComponent,
     DashAdminPageComponent,
-    RelatoriosPageComponent
+    RelatoriosPageComponent,
+    AddAtendentePageComponent,
+    AtendentePageComponent
 
   ],
   imports: [
@@ -28,6 +32,13 @@ import { RelatoriosPageComponent } from './relatorios-page/relatorios-page.compo
       {
         path: '',
         component: LoginPageComponent
+
+      },
+
+
+      {
+        path: 'atendente',
+        component: AtendentePageComponent
 
       },
 
