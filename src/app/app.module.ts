@@ -13,6 +13,8 @@ import { RelatoriosPageComponent } from './relatorios-page/relatorios-page.compo
 import { AddAtendentePageComponent } from './add-atendente-page/add-atendente-page.component';
 import { AtendentePageComponent } from './atendente-page/atendente-page.component';
 
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -62,6 +64,7 @@ import { AtendentePageComponent } from './atendente-page/atendente-page.componen
         }
 
     ]),
+
     BsDropdownModule.forRoot(),
     TooltipModule.forRoot(),
     ModalModule.forRoot()
