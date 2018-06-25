@@ -10,6 +10,7 @@ export class DashAdminPageComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    
   }
 
 }
