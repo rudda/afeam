@@ -9,12 +9,14 @@ import { ModalModule } from 'ngx-bootstrap/modal';
 import { FormsModule } from '@angular/forms';
 import { DashAdminPageComponent } from './dash-admin-page/dash-admin-page.component';
 import {Routes, RouterModule} from '@angular/router';
+import { RelatoriosPageComponent } from './relatorios-page/relatorios-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginPageComponent,
-    DashAdminPageComponent
+    DashAdminPageComponent,
+    RelatoriosPageComponent
 
   ],
   imports: [
