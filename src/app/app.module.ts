@@ -42,9 +42,22 @@ import { AtendentePageComponent } from './atendente-page/atendente-page.componen
 
       },
 
+      {
+        path: 'addatendente',
+        component: AddAtendentePageComponent
+
+      },
+
         {
           path: 'dash-adm',
           component: DashAdminPageComponent
+
+        }
+        ,
+
+        {
+          path: 'relatorios',
+          component: RelatoriosPageComponent
 
         }
 

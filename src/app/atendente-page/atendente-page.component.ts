@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {Router, Route } from '@angular/router';
 
 @Component({
   selector: 'app-atendente-page',
@@ -7,9 +8,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AtendentePageComponent implements OnInit {
 
-  constructor() { }
+  constructor(public router: Router) { }
 
   ngOnInit() {
+  }
+
+  novo() {
+
+    this.router.navigate(['addatendente']);
+
+  }
+
+  buscar() {
+
+
   }
 
 }
