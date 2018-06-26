@@ -13,42 +13,76 @@
       </nav>
     </div>
 
-    <div class="row" style="margin-top: 51px">
+    <div class="row " style="margin-top: 51px; ">
 
       <div class="well"  >
 
-        <div class="row">
-        <div class="col-md-4">
+        <div class="row col-md-offset-2">   
 
-            <div class="dropdown" dropdown> <!-- {1} -->
-              <a dropdownToggle role="button"> <!-- {2} -->
-                Dropdown <span class="caret"></span></a>
-              <ul *dropdownMenu class="dropdown-menu"> <!-- {3} -->
-                  <li><a href="#">Action</a></li>
-                  <li><a href="#">Another action</a></li>
-                  <li><a href="#">Something else here</a></li>
-                  <li role="separator" class="divider"></li>
-                  <li><a href="#">Separated link</a></li>
-                  <li role="separator" class="divider"></li>
-                  <li><a href="#">One more separated link</a></li>
-              </ul>
+          <div class="col-md-3">
+              <div class="dropdown" dropdown style=" cursor: pointer;"> <!-- {1} -->
+                <button dropdownToggle role="button" style=" cursor: pointer;"> <!-- {2} -->
+                  Selecione o Mês <span class="caret"></span></button>
+                <ul *dropdownMenu class="dropdown-menu" style=" cursor: pointer;"> <!-- {3} -->
+                    <li>Janeiro</li>
+                    <li>Fevereiro</li>
+                    <li>Março</li>
+                    <li>Abril</li>
+                    <li>Maio</li>
+                    <li>Junho</li>
+                    <li>Julho</li>
+                    <li>Agosto</li>
+                    <li>Setembro</li>
+                    <li>Outubro</li>
+                    <li>Novembro</li>
+                    <li>Dezembro</li>
+                </ul>
+            </div>
+
+            </div>
+
+            <div class="col-md-3">
+              <div class="dropdown" dropdown style=" cursor: pointer;"> <!-- {1} -->
+                <button dropdownToggle role="button" style=" cursor: pointer;"> <!-- {2} -->
+                  selecione o ano <span class="caret"></span></button>
+                <ul *dropdownMenu class="dropdown-menu" style=" cursor: pointer;"> <!-- {3} -->
+                    <li>2018</li>
+                    <li>2017</li>
+                    <li>2016</li>
+                    <li>2015</li>
+                    <li>2014</li>
+                    <li>2013</li>
+                    <li>2012</li>
+                    <li>2011</li>
+                    <li>2010</li>
+                </ul>
+            </div>
           </div>
 
+
+          <div class="col-md-3">
+            <div class="dropdown" dropdown style=" cursor: pointer;"> <!-- {1} -->
+              <button dropdownToggle role="button" style=" cursor: pointer;"> <!-- {2} -->
+                Selecione o Tipo <span class="caret"></span></button>
+              <ul *dropdownMenu class="dropdown-menu" style=" cursor: pointer;"> <!-- {3} -->
+                  <li>deferidos</li>
+                  <li>indeferidos</li>
+                  <li>pendentes</li>
+                  <li>todos</li>
+                
+              </ul>
+          </div>
         </div>
 
 
+          <div class="col-md-2">
+            <button type="button" class="btn btn-default" (click)="buscar()" >buscar relatorio</button>
+          </div>    
 
+        </div>
 
-        <div class="col-md-2">
-
-            <button type="button" class="btn btn-default" (click)="buscar()" >buscar</button>
-
-          </div>
-
-      </div>
-      </div>
-
-    </div>
+        </div>
+        </div>
 
 
     <div class="relatorio-content">
