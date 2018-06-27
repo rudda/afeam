@@ -74,6 +74,8 @@ import { AddClientePageComponent } from './add-cliente-page/add-cliente-page.com
 
 
 
+
+
     ]),
 
     BsDropdownModule.forRoot(),
