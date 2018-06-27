@@ -12,6 +12,8 @@ import {Routes, RouterModule} from '@angular/router';
 import { RelatoriosPageComponent } from './relatorios-page/relatorios-page.component';
 import { AddAtendentePageComponent } from './add-atendente-page/add-atendente-page.component';
 import { AtendentePageComponent } from './atendente-page/atendente-page.component';
+import { DashAtendentPageComponent } from './dash-atendent-page/dash-atendent-page.component';
+import { AddClientePageComponent } from './add-cliente-page/add-cliente-page.component';
 
 
 
@@ -22,7 +24,9 @@ import { AtendentePageComponent } from './atendente-page/atendente-page.componen
     DashAdminPageComponent,
     RelatoriosPageComponent,
     AddAtendentePageComponent,
-    AtendentePageComponent
+    AtendentePageComponent,
+    DashAtendentPageComponent,
+    AddClientePageComponent
 
   ],
   imports: [
@@ -61,7 +65,14 @@ import { AtendentePageComponent } from './atendente-page/atendente-page.componen
           path: 'relatorios',
           component: RelatoriosPageComponent
 
-        }
+        },
+        {
+          path: 'addcliente',
+          component: AddClientePageComponent
+
+        },
+
+
 
     ]),
 
