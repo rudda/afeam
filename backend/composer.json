@@ -1,0 +1,11 @@
+{
+    "require": {
+        "slim/slim": "^3.10",
+        "mpdf/mpdf": "^7.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "afeam\\api\\" : "api/v1"
+        }
+    }
+}
